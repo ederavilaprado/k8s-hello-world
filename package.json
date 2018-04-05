@@ -5,6 +5,9 @@
   "repository": "git@github.com:ederavilaprado/k8s-hello-world.git",
   "author": "Eder Ávila Prado <prado.eder@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
   "dependencies": {
     "dotenv": "^5.0.1"
   }

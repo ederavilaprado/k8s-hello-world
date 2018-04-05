@@ -4,6 +4,7 @@ require("dotenv").config();
 const fs = require('fs');
 
 console.log('-----------');
+console.log("Args:", process.argv);
 console.log("RAPPI_INPUT_METADATA_PATH:", process.env.RAPPI_INPUT_METADATA_PATH);
 console.log("RAPPI_INPUT_DATA_PATH:", process.env.RAPPI_INPUT_DATA_PATH);
 console.log("RAPPI_OUTPUT_METADATA_PATH:", process.env.RAPPI_OUTPUT_METADATA_PATH);
