@@ -27,4 +27,13 @@ console.log("output data:", outData);
 fs.writeFileSync(process.env.RAPPI_OUTPUT_METADATA_PATH, JSON.stringify(outMetadata, null, 2));
 fs.writeFileSync(process.env.RAPPI_OUTPUT_DATA_PATH, JSON.stringify(outData, null, 2));
 
+
+if (process.env.WAIT_TIME) {
+  setTimeout(() => {
+    console.log("->", "end.......");
+  }, parseInt(process.env.WAIT_TIME));
+  
+  return;
+}
+
 console.log('->', 'end...');
